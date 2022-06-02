@@ -23,6 +23,7 @@ body {
 .topnav {
     overflow: hidden;
     background-color: #333;
+    width: 100%;
 }
 
 .topnav a {
@@ -39,25 +40,29 @@ body {
     color: black;
 }
 
-.leftcolumn {
-    float: left;
-    width: 75%;
-}
-
 section {
-    padding: 20px;
+    float: left;
+    width: 70%;
+    text-align: left;
+    padding-left: 8px;
 }
 
-#img {
-    display: flex;
-    justify-content: center;
+#titulo{
+    text-align: center;
 }
-
-.rightcolumn {
+img {
+    margin-left: 300px;
+    max-width: 400px;
+    max-height: 350px;
+}
+aside {
     float: right;
-    width: 25%;
+    width: 30%;
     background-color: #8f88886d;
     padding-left: 20px;
+    margin-top: 8px;
+    justify-content: center;
+    text-align: center;
 }
 #cur {
     text-align: center;
@@ -76,7 +81,7 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
+    section, aside {   
       width: 100%;
       padding: 0;
     }
